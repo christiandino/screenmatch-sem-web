@@ -15,9 +15,6 @@ public class ConsumoApi {
                 .build();
         HttpResponse<String> response = null;
 
-        //String chave = "2459d7a0";
-        //String endereco = "https://www.omdbapi.com/?t=" + busca.replace(" ", "+") + "&apikey=" + chave;
-
         try {
             response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
